@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 /* font-family: 'Fjalla One', sans-serif; */
 body{
-    padding: 0;
+    padding: 0;    
     margin: 0;
     background-color: rgb(34, 33, 34);
     font-family: 'Fjalla One', sans-serif;
@@ -100,6 +100,14 @@ outline: none;
         font-family: 'Fjalla One', sans-serif;
         outline: none;
         }
+        select{
+            width: 88%;
+        background: transparent;
+        border: none;
+        color: white;
+        font-family: 'Fjalla One', sans-serif;
+        outline: none;
+        }
 
 .namebox:hover,
 .agebox:hover,
@@ -140,4 +148,8 @@ box-shadow: rgba(207, 205, 205, 0.459) 0px 3px 6px, rgba(119, 119, 119, 0.452) 0
     margin-right: 15px;
     font-family: 'Fjalla One', sans-serif;
     cursor: pointer;
+}
+
+option{
+    color: black;
 }

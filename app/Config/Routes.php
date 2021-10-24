@@ -34,8 +34,15 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('home', 'Home::index');
 $routes->get('register', 'Home::registerfrom');
-$routes->post('register/signup', 'Register::regis');
-
+$routes->post('signup', 'Register::regis');
+$routes->get('login', 'Home::loginfrom');
+$routes->post('logining', 'Register::login');
+$routes->get('logout', 'Home::logoutfrom');
+$routes->get('regisrun', 'Register::callcategary');
+$routes->get('myrun', 'Home::myrunfrom');
+$routes->post('regisruning', 'Register::regisruning');
+$routes->post('myrunup', 'Register::comfrimRunPage');
+$routes->post('updaterun', 'Register::updateRunning');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

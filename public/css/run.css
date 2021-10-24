@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+/* font-family: 'Fjalla One', sans-serif; */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(34, 33, 34);
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+
+}
+
+.list_body{
+    width: 70%;
+    margin-left: 15%;
+    background: rgb(36, 36, 36);
+}
+
+.list_head{
+    display: flex;
+    
+}
+
+.list_head p{
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1.5px solid rgb(102, 102, 102);
+    color: white;
+    cursor: default;
+}
+
+form a{
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+    cursor: default;  
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+form a:hover{
+    color: rgb(138, 138, 138);
+}
+
+#P04{
+    width: 10%;
+}
+
+#P03{
+    width: 20%;
+}
+
+#P02{
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#P01{
+    width: 20%;
+}
+
+form{
+    display: flex;
+    border-bottom: 1.5px solid rgb(59, 59, 59);
+}
+
+form input,select{
+    padding: 10px 0px;
+    text-align: center;
+    cursor: default;
+    background: transparent;
+    color: rgb(216, 216, 216);
+    font-family: 'Fjalla One', sans-serif;
+    border: none;
+    outline: none;
+}
+option{
+    color: black;
+}
+.backbox{
+    margin-top: 6%;
+}
+
+input[type=submit]{
+    color: white;
+    cursor: pointer;
+    transition: .4s
+}
+
+input[type=submit]:hover{
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+
+.backmyrun{
+    font-size: 26px;
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    transition: .4s;
+    margin-left: -90%;
+}
+
+.backmyrun:hover{
+    color: white;
+}
+
+#P07{
+    position: absolute;
+    opacity: 0%;
+}

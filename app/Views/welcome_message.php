@@ -9,6 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="<?= base_url('public/css/home.css') ?>">
 </head>
 <body>
+	<?php $session=session(); ?>
 	<div class="Navbar" >
 		<div class="navbar_img">
 			<a href="/">
@@ -16,21 +17,37 @@
 			</a>
 		</div> 
 		<div class="navbar_menu">
-			<div class="navbar_menu_text">
-				<a href="register"><h4 >Register</h4></a>
-				<a><h4>Login</h4></a>
-			</div>
+			<?php if($session->get('id_card') != ''){ ?>
+				<div class="navbar_menu_text">
+					<a href="logout"><h4 >Logout</h4></a>
+					<a href="login"><h4><?php echo $session->get('name') ?></h4></a>
+				</div>
+			<?php }else{?>
+				<div class="navbar_menu_text">
+					<a href="register"><h4 >Register</h4></a>
+					<a href="login"><h4>Login</h4></a>
+				</div>
+			<?php }?>
 		</div>
 	</div>
 	<div class="text_head">
 		<div class="nameweb">
-			<h1>T A I D E</h1>
+			<h1>T A I D E </h1>
 			<h1 id="name02">R U N N E R</h1>
 		</div>
-		<div class="group_button">
-			<button>Run register</button>
-		</div>
+		<?php if($session->get('id_card') != ''){ ?>
+			<div class="group_button">
+				<a href="myrun"><button id="buttonrun">My Running</button></a>
+				<a href="regisrun"><button>Run register</button></a>
+			</div>
+		<?php }else{?>
+			<div class="group_button">
+				<button>Run register</button>
+			</div>
+		<?php }?>
 	</div>
+
+
 
 
 </body>
